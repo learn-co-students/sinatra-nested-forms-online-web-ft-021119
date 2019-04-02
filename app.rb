@@ -18,12 +18,6 @@ module FormsLab
         @ship = Ship.new(info[:name], info[:type], info[:booty])
       end
 
-      Ships.all.each do |ship|
-        @name = ship.name
-        @type = ship.type
-        @booty = ship.booty
-      end
-
       erb :"pirates/show"
     end
   end
