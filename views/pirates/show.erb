@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+
   <body>
 
-    <h1>Pirate</h1>
+    <h2>Pirate</h2>
     <p>
       Name: <%=@pirate.name%>
       Weight: <%=@pirate.weight%>
@@ -14,13 +15,11 @@
     </p>
 
     <h2>Ships</h2>
-      <% Ships.all.each do |ship| %>
-      <p>
-        Name: <%= @ship.name %>
-        Type: <%= @ship.type %>
-        Booty: <%= @ship.booty %>
-      <p>
-        <% end %>
+    <p>
+      Name: <%= @ship.name %>
+      Type: <%= @ship.type %>
+      Booty: <%= @ship.booty %>
+    <p>
 
   </body>
 
