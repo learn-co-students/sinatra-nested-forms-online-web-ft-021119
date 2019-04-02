@@ -1,4 +1,4 @@
-class Ship 
+class Ship
   attr_accessor :name, :type, :booty
 
   @@all = []
@@ -15,7 +15,7 @@ class Ship
   end
 
   def self.clear
-    @@all = []
+    @@all.clear
   end
 
 end
